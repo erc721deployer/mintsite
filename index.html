@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           key: key,
           eth: invites[key].condition.converted.eth,
           limit: invites[key].condition.converted.limit,
-          current: nextId
+          current: invites[key].condition.converted.nextId
         }
       })
     })

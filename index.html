@@ -15,14 +15,12 @@
   <tr>
     <th>mint price</th>
     <th>current</th>
-    <th>supply</th>
     <th>ready to mint?</th>
   </tr>
   {{#each items}}
     <tr>
       <td>{{eth}} ETH</td>
       <td>{{nextId}}</td>
-      <td>{{supply}}</td>
       <td><a class='btn' href="mint.html#address={{address}}&key={{key}}">let's go!</td</a></td>
     </tr>
   {{/each}}
@@ -41,7 +39,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const name = await f0.name()
     const symbol = await f0.symbol()
     const placeholder = await f0.placeholder()
-    const supply = await f0.supply()
     const invites = await f0.myInvites()
     document.querySelector(".box").innerHTML = template({
       title: `Cranium Apes Mint`,

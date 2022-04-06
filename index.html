@@ -14,12 +14,14 @@
   <table class='invites'>
   <tr>
     <th>mint price</th>
+    <th>current</th>
     <th>limit</th>
     <th>ready to mint?</th>
   </tr>
   {{#each items}}
     <tr>
       <td>{{eth}} ETH</td>
+      <td>{{nextId}}</td>
       <td>{{limit}}</td>
       <td><a class='btn' href="mint.html#address={{address}}&key={{key}}">let's go!</td</a></td>
     </tr>
@@ -35,6 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   })
   try {
     let { f0, web3 } = await connect(config)
+    let nextId = await f0.nextId()
     const name = await f0.name()
     const symbol = await f0.symbol()
     const placeholder = await f0.placeholder()

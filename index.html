@@ -15,14 +15,12 @@
   <tr>
     <th>mint price</th>
     <th>current</th>
-    <th>total</th>
     <th>ready to mint?</th>
   </tr>
   {{#each items}}
     <tr>
       <td>{{eth}} ETH</td>
       <td>{{nextId}}</td>
-      <td>{{supply}}</td>
       <td><a class='btn' href="mint.html#address={{address}}&key={{key}}">let's go!</td</a></td>
     </tr>
   {{/each}}
@@ -50,7 +48,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         return {
           index: index,
           address: config.contract,
-          supply: config.converted.supply,
           key: key,
           eth: invites[key].condition.converted.eth,
           limit: invites[key].condition.converted.limit

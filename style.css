@@ -71,7 +71,7 @@ h1 a {
   color: black;
 }
 .invite {
-  background: rgba(255,255,255,0.5); 
+  background: rgba(255,255,255,0.0); 
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
@@ -91,12 +91,12 @@ table {
   overflow-wrap: break-word;
   display: table !important;
   margin-top: 10px;
-  background: rgba(255,255,255,0.5); 
+  background: rgba(255,255,255,0.0); 
 }
 td, th {
   padding: 5px;
   font-size: 14px;
-  background: rgba(255,255,255,0.5); 
+  background: rgba(255,255,255,0.0); 
 }
 th {
   border-bottom: 1px solid rgba(0,0,0,0.8);
@@ -105,7 +105,7 @@ th {
 tr {
   width: 100%;
   border-bottom: 1px solid black;
-  background: rgba(255,255,255,0.5); 
+  background: rgba(255,255,255,0.0); 
 }
 .btn {
   background: rgba(128,128,128,0.8); 
@@ -126,7 +126,7 @@ tr {
   padding: 20px;
   box-sizing: border-box;
   font-size: 15px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.0);
   margin-top: 20px;
   border-radius: 50px;
 }
@@ -135,10 +135,10 @@ tr img {
 }
 tr a {
   color: black;
-  background: rgba(255,255,255,0.5); 
+  background: rgba(255,255,255,0.0); 
 }
 .token {
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.0);
   padding: 5px;
   text-align: center;
   font-size: 12px;

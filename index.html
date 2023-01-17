@@ -13,8 +13,8 @@
   {{#if table}}
   <table class='invites'>
   <tr>
-    <th>    </th>
-    <th>    </th>
+    <th>MINT PRICE</th>
+    <th>READY?!</th>
   </tr>
   {{#each items}}
     <tr>
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const placeholder = await f0.placeholder()
     const invites = await f0.myInvites()
     document.querySelector(".box").innerHTML = template({
-      title: `Cranium Apes Mint`,
+      title: `MEDITATING MONKS MINT`,
       image: '',
       table: (Object.keys(invites).length > 0),
       items: Object.keys(invites).map((key, index) => {
